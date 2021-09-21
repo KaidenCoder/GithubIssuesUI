@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* top bar css */
+.topbar{
+    background-color: rgba(246,248,250);
+    padding: 0.5em 1em;
+    box-shadow: 0 1px rgb(235, 232, 232);
+}
+
+/* toptitleright css */
+.toptitle{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1em 0 1em;
+}
+
+.toptitleRightPtagStyle1{
+    border: 1px solid rgba(128,128,128,0.5); 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+.toptitleRightPtagStyle2{
+    background:rgb(255,255,255); 
+    border: 1px solid rgba(128,128,128,0.5); 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    margin-right: 1em;
+}
+
+/* secondtitle bar css  */
+.secondtitlePtagStyle1{
+    margin-right: 1.5em;
+}
+
+.secondtitlePtagStyle2{
+    margin-left: 2.5em;
+}
+
+.secondtitleSpantagStyle{
+    background: rgba(128,128,128,0.3); 
+    border-radius: 15px; 
+    padding:1px 7px;
+}
+
+/* filter row css  */
+.filters{
+    display: flex;
+    margin: 2em 1em;
+}
+
+.filtersSpantagStyle1{
+    background:rgb(246,248,250); 
+    border: 1px solid rgba(128,128,128,0.5); 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+.filtersSpantagStyle2{
+    background:rgb(255,255,255); 
+    border: 1px solid rgba(128,128,128,0.5); 
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 10px; 
+    padding-left: 0.5em; 
+    padding-right: 0; 
+    margin-right: 1em;
+}
+
+.filtersSpantagStyle3{
+    border: 1px solid rgba(128,128,128,0.5); 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+.filtersSpantagStyle4{
+    background: rgba(128,128,128,0.3); 
+    border-radius: 15px; 
+    padding:1px 7px;
+}
+
+.filtersSpantagStyle5{
+    border: 1px solid rgba(128,128,128,0.5); 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    margin-right: 1em;
+}
+
+.filtersSpantagStyle6{
+    background: rgb(83,162,88); 
+    padding: 0 5px; 
+    border-radius: 10px; 
+    color: white;
+}
+
+/* issues display row css  */
+.issues{
+    display: flex;
+    flex-direction: column;
+}
+
+.issues-element{
+    display: flex;
+    margin: 0 1em;
+    justify-content: space-between;
+    border: 1px solid rgba(128,128,128,0.5);
+}
+
+.issues-element:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+.issues-elementHeader{
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.issues-elementLeftPart{
+    display: flex; margin: 1em;
+}
+
+
+.issues-elementPtagStyle1{
+    margin:5px;
+}
+
+.issues-elementPtagStyle2{
+    margin-left: 1em;
+}
+
+.issues-elementPtagStyle3{
+    margin: 1em 1em 1em 1em;
+}
+
+.issues-elementPtagStyle4{
+    opacity: 0.5; font-size: 0.8em;
+}
+
+.issues-elementPtagStyle5{
+    margin:2em 4em 1em 1em;
+}
+
+.issues-elementPtagStyle6{
+    margin:2.4em 2em 1em 1em;
+}
+
+
+img{
+    border-radius: 100%;
+}
+
+/* For smaller screen, make some items invisible  */
+@media only screen and (max-width: 810px) {
+    .toptitleRight{
+        display: none;
+        background-color: lightblue;
+    }
+    .small{
+        display: none;
+        color: white;
+    }
+
+    .secondtitle{
+        display: flex;
+        justify-content: left;
+    }
+    .whensmall{
+        visibility: visible;
+    }
+    .inputwidth{
+        padding-right: 10em;
+    }
+    .filters{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .labels{
+        margin-bottom: 1em;
+    }
+    .newissue{
+        margin-left: 3em;
+    }
+    .assign-message{
+        display: none;
+    }
+    
+}
+
+/* For Larger screen  */
+@media only screen and (min-width: 810px) {
+    .toptitleRight{
+        display: flex;
+    }
+    .secondtitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1em;
+    }
+    .whensmall{
+       visibility: hidden;
+    }
+    .inputwidth{
+        padding-right: 20em;
+    }
+    .filters{
+        justify-content: center;
+    }
+
+    .assign-message{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
